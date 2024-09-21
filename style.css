@@ -1,4 +1,11 @@
-/* style.css */
+:root {
+    --f-1: 'Playfair Display', serif;
+    --f-2: 'Quicksand', sans-serif;
+    --text-1: #18564c;
+    --text-2: #588066;
+    --marrom-bg: #9d7605;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: var(--f-2); 
 }
 
 .container {
@@ -23,7 +30,7 @@ body, html {
 .header-image, .header-text {
     flex: 1; 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -36,6 +43,7 @@ body, html {
 .header-text {
     text-align: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .text-content {
@@ -43,13 +51,74 @@ body, html {
 }
 
 .date, .quote {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .date { 
-    font-size: 22px;
+    font-family: var(--f-1); 
+    color: var(--text-2);
+    font-size: 25px;
+    line-height: 25px;
+    padding: 5px 30px 10px 30px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to right, #edd5ad, #9d7605, #edd5ad);
+    width: fit-content;
+    text-align: center;
 }
 
 .names {
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
+    font-family: var(--f-1); 
+    color: var(--text-1);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 85px;
+}
+
+.quote{
+    font-family: var(--f-2); 
+    font-size: 20px;
+    color: var(--text-1);
+
+}
+
+.e{
+    background-color: var(--marrom-bg);
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    font-family: var(--f-2);
+    font-weight: 400;
+    color: #fff;
+}
+
+.e::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    width: 80px;
+    height: 1px;
+    background-color: #bdc1ab;
+    right: 65px;
+}
+
+.e::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    width: 80px;
+    height: 1px;
+    background-color: #bdc1ab;
+    left: 65px;
 }
