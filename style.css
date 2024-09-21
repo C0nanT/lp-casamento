@@ -1,0 +1,55 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.header-image, .header-text {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image img {
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+.header-text {
+    text-align: center;
+    flex-direction: column;
+}
+
+.text-content {
+    margin-bottom: 20px;
+}
+
+.date, .quote {
+    margin: 20px 0;
+}
+
+.date { 
+    font-size: 22px;
+}
+
+.names {
+    margin: 5px 0;
+}
