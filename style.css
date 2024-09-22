@@ -12,6 +12,10 @@
     }
 }
 
+body{
+    background-color: #f6f2e3 !important;
+}
+
 .pseudo-line::after{
     content: '';
     display: inline-block;
@@ -39,4 +43,29 @@
     border-image-slice: 1;
     border-width: 1px;
     border-image-source: linear-gradient(to right, #edd5ad, #9d7605, #edd5ad);
+}
+
+.div-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/curva_vertical.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right:-10px;
+}
+
+.pseudo-1::after {
+    background-image: url(./imgs/curva01.png);
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    bottom: -20%;
+    z-index: 9;
 }
