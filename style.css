@@ -81,3 +81,10 @@ body{
     bottom: -20%;
     z-index: 9;
 }
+
+.flores{
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 28%
+}
